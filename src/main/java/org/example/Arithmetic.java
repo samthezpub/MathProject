@@ -26,6 +26,7 @@ public class Arithmetic {
         return factorial;
     }
 
+    //Исаев Константин Дмитриевич
     public static int parseIntToDouble(double a ){
         int b = (int) a;
         return b;
