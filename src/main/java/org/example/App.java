@@ -20,14 +20,13 @@ public class App {
         System.out.print("Arithmetic.getMinimum(), Arithmetic.getMaximum():");
         System.out.println(Arithmetic.getMinimum(nums) + "," + Arithmetic.getMaximum(nums));
 
-        System.out.println("findGCD(36,48,60,72):" + Arithmetic.findGCD(36,48,60,72));
-        System.out.println("findGCD(36,48):" + Arithmetic.findGCD(36,48));
+        System.out.println("findGCD(36,48,60,72):" + Arithmetic.findGCD(36, 48, 60, 72));
+        System.out.println("findGCD(36,48):" + Arithmetic.findGCD(36, 48));
 
-        System.out.println("findLCM(36,48,60,72):" + Arithmetic.findLCM(36,48,60,72));
-        System.out.println("findLCM(36,48,60,72):" + Arithmetic.findLCM(36,48));
+        System.out.println("findLCM(36,48,60,72):" + Arithmetic.findLCM(36, 48, 60, 72));
+        System.out.println("findLCM(36,48,60,72):" + Arithmetic.findLCM(36, 48));
 
-        System.out.println("Arithmetic.getTwoBase(20312):" +Arithmetic.getTwoBase(20312));
-
+        System.out.println("Arithmetic.getTwoBase(20312):" + Arithmetic.getTwoBase(20312));
 
 
         // Недилько Владислав Григорьевич
@@ -46,7 +45,7 @@ public class App {
         System.out.print("Выберите действие: ");
         char action = sc.next().charAt(0);
 
-        switch (action){
+        switch (action) {
             case '1':
                 System.out.println("Последний член арифметической прогрессии a" + "(" + n + "): " + Arithmetic.aProgression(n, firstValue, difference));
                 break;
@@ -55,7 +54,10 @@ public class App {
                 break;
             case '3':
                 System.out.println("Последний член арифметической прогрессии a" + "(" + n + "): " + Arithmetic.aProgression(n, firstValue, difference));
-                System.out.println("Сумма арифметической прогрессии S" + "(" + n + "): " +Arithmetic.aProgressionSum(n, firstValue, difference));
+                System.out.println("Сумма арифметической прогрессии S" + "(" + n + "): " + Arithmetic.aProgressionSum(n, firstValue, difference));
+                break;
+            default:
+                System.out.println("Такого варианта нет в списке!");
                 break;
         }
     }
