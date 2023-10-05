@@ -1,5 +1,7 @@
 package org.example;
 
+import lombok.AccessLevel;
+
 import java.util.Scanner;
 
 /**
@@ -60,5 +62,8 @@ public class App {
                 System.out.println("Такого варианта нет в списке!");
                 break;
         }
+
+        System.out.println(Algebra.getQuadraticEq(10,'+',20, '-', 5)[0]);
+        System.out.println(Algebra.getQuadraticEq(10,'+',20, '-', 5)[1]);
     }
 }
